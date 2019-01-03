@@ -48,4 +48,4 @@ async def spam():
 	await bot.say('lol')
 	await bot.say('lol')
 
-bot.run('Token')
+client.run(os.getenv('Token'))
