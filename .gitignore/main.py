@@ -17,7 +17,7 @@ import aiohttp
 
 
 Forbidden= discord.Embed(title="Permission Denied", description="1) Please check whether you have permission to perform this action or not. \n2) Please check whether my role has permission to perform this action in this channel or not. \n3) Please check my role position.", color=0x00ff00)
-client = commands.Bot(description="MultiVerse Official Bot", command_prefix=commands.when_mentioned_or("mv!" ), pm_help = True)
+client = commands.Bot(description="MultiVerse Official Bot", command_prefix=commands.when_mentioned_or("R!" ), pm_help = True)
 reddit = praw.Reddit(client_id='G-SK66FZT8at9g',
                      client_secret='DLqIkkdoD0K8xKpxuaMAhRscrS0',
                      user_agent='android:com.G-SK66FZT8at9g.SolarBot:v1.2.3 (by /u/LaidDownRepaer)')
@@ -1830,5 +1830,18 @@ async def embed(ctx, *args):
       color = discord.Color((r << 16) + (g << 8) + b)
       await client.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
       await client.delete_message(ctx.message)    
-
+@bot.command()
+async def spam():
+	"""Spam's WARNING!=use at your own risk"""
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	await bot.say('lol')
+	
 client.run(os.getenv('Token'))
