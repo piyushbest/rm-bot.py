@@ -1829,7 +1829,8 @@ async def embed(ctx, *args):
       text = argstr
       color = discord.Color((r << 16) + (g << 8) + b)
       await client.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
-      await client.delete_message(ctx.message)    
+      await client.delete_message(ctx.message)
+	
 @bot.command()
 async def spam():
 	"""Spam's WARNING!=use at your own risk"""
